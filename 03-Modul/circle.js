@@ -5,4 +5,5 @@ const circleCircumference = (r) => {
     return `Dairenin Çevresi :${2 * Math.PI * r}`
 }
 
-module.exports = { circleArea, circleCircumference }
+//module.exports = { circleArea, circleCircumference }
+export { circleArea, circleCircumference }

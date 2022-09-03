@@ -1,4 +1,5 @@
-const { circleArea, circleCircumference } = require('./circle')
+import { circleArea, circleCircumference } from './circle.js'
+//const { circleArea, circleCircumference } = require('./circle')
 
 const circleCal = (r) => {
         return new Promise((resolve, reject) => {
@@ -10,14 +11,14 @@ const circleCal = (r) => {
         })
     }
     /* async function calculator(r) {
-            try {
-                const result = await circleCal(r)
-                console.log(result)
-            } catch (error) {
-                console.log(error)
-            }
-        }
-        calculator(5) */
+                                            try {
+                                                const result = await circleCal(r)
+                                                console.log(result)
+                                            } catch (error) {
+                                                console.log(error)
+                                            }
+                                        }
+                                        calculator(5) */
 
 circleCal(5)
     .then((value) => {
