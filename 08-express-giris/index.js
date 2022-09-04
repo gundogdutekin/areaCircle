@@ -7,7 +7,7 @@ app.get('/', (req, res) => {
 })
 app.get('/about', (req, res) => {
     res.header('Cache-Control', 'no-cache, no-store, must-revalidate')
-        //Status Code: 304 OK den kurtulmak için.Bellekten okuma gönderdiğim response i sayfaya bas .
+        //Status Code: 304 OK den kurtulmak için.Bellekten okuma, gönderdiğim response i sayfaya bas .
     res.status(200).send('ABOUT SAYFASI')
 })
 app.get('/contact', (req, res) => {
